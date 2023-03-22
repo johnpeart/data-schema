@@ -12,6 +12,6 @@ It has been written to be consistent and not in conflict with different industry
 1) core identity claims 
 2) assurance processes 
 3) proofing processes 
-4) Identity evidence "
+4) identity evidence
 
 The data schema provides practical guidance on how to describe checks that identity service providers have undertaken, and provides predefined values on how the checks can be shared by an IDSPs to other other organisations such as a relying party.
