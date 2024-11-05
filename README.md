@@ -12,5 +12,4 @@ The data schema includes sections for:
  
 It has been written to be consistent with and not in conflict with different industry approaches for data exchange and technical standards.
  
-Following the data schema is not mandatory under the trust framework, but both industry and the public sector have asked DSIT to provide this guidance to encourage interoperability. By following the guidance, IDSPs and CSPs can enable data to be exchanged consistently between trust framework participants and other organisations, such as relying parties.
- 
+Following the data schema is not mandatory under the trust framework, but both industry and the public sector have asked DSIT to provide this guidance to encourage interoperability. By following the guidance, IDSPs, CSPs, and other service providers can enable data to be exchanged consistently between trust framework participants and other organisations, such as relying parties.
