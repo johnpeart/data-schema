@@ -1,0 +1,44 @@
+<section aria-label="Service information" class="govuk-service-navigation"
+  data-module="govuk-service-navigation">
+  <div class="govuk-width-container">
+    <div class="govuk-service-navigation__container">
+      <span class="govuk-service-navigation__service-name">
+        <a href="{{ site.baseurl }}/" class="govuk-service-navigation__link">
+          {{ site.title }}
+        </a>
+      </span>
+      <nav aria-label="Menu" class="govuk-service-navigation__wrapper">
+        <button type="button" class="govuk-service-navigation__toggle govuk-js-service-navigation-toggle" aria-controls="navigation" hidden>
+          Menu
+        </button>
+        <ul class="govuk-service-navigation__list" id="navigation">
+          {% for item in collections.pages %}
+            {% if page.url == item.url %}
+            {% assign active = true %}
+            {% else %}
+            {% assign active = false %}
+            {% endif %}
+          <li class="govuk-service-navigation__item {% if active == true %}govuk-service-navigation__item--active{% endif %}">
+            <a class="govuk-service-navigation__link" href="{{ site.baseurl }}{{ item.url }}" {% if active == true %}aria-current="true"{% endif %}>
+              {% if active == true %}<strong class="govuk-service-navigation__active-fallback">{% endif %}{{ item.data.title }}{% if active == true %}</strong>{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+          
+          {% for item in site.service-navigation %}
+          {% if page.url == item.href %}
+            {% assign active = true %}
+          {% else %}
+            {% assign active = false %}
+          {% endif %}
+          <li class="govuk-service-navigation__item {% if active == true %}govuk-service-navigation__item--active{% endif %}">
+            <a class="govuk-service-navigation__link" href="{{ site.baseurl }}{{ item.href }}" {% if active == true %}aria-current="true"{% endif %}>
+              {% if active == true %}<strong class="govuk-service-navigation__active-fallback">{% endif %}{{ item.label }}{% if active == true %}</strong>{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+{
+    "title": "Data schema",
+    "caption": "UK digital identity and attributes trust framework",
+    
+    "service-navigation": [
+        {
+            "label": "Github",
+            "href": "https://www.github.com/ofdia-at-dsit/data-schema"
+        }
+    ],
+    "phase": {
+        "phase": "Alpha",
+        "description": "This service is a prototype. Do not rely on information in this prototype."
+    },
+    "repository": {
+        "url": "https://github.com/ofdia-at-dsit/data-schema/"
+    }
+}

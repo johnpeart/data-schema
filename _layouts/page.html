@@ -1,0 +1,29 @@
+---
+layout: "default"
+---
+
+<div class="govuk-grid-row">
+    
+  <div class="govuk-grid-column-one-quarter">
+    <nav>
+      <h2 class="govuk-visually-hidden">Table of contents</h2>
+      <ul class="govuk-list govuk-list--spaced">      
+      {% assign toc_headings = content | toc %}
+      {% for heading in toc_headings %}
+        <li class="toc-level-{{ heading.level }}">
+          <a class="govuk-link govuk-link--no-underline govuk-link--no-visited-state" href="#{{ heading.slug }}">{{ heading.text }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </nav>
+  </div>
+    
+  <div class="govuk-grid-column-three-quarters">
+    {% include 'page-title.html' %}
+
+    {{ content }}
+    
+    {% include 'page-footer.html' %}
+  </div>
+  
+</div>

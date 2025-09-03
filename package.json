@@ -1,0 +1,23 @@
+{
+    "name": "UK DIATF Data Schema",
+    "version": "1.0",
+    "scripts": {
+        "start": "eleventy --serve",
+        "build": "eleventy"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@11ty/eleventy": "^3.0.0",
+        "markdown-it": "^14.1.0",
+        "markdown-it-anchor": "^9.2.0",
+        "markdown-it-attrs": "^4.2.0",
+        "markdown-it-footnote": "^4.0.0",
+        "sass": "^1.89.2"
+    },
+    "dependencies": {
+        "govuk-frontend": "^5.11.0"
+    }
+}

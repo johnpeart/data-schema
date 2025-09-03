@@ -1,0 +1,4 @@
+{
+   "layout": "page",
+   "permalink": "/{{ page.filePathStem | remove: '/pages' | remove: '/index' }}/"
+}
