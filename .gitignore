@@ -4,7 +4,9 @@ node_modules/
 # Eleventy output directory
 _output/
 _site/
-_data/webmentions.json
+
+# Development software
+.nova
 
 # Logs
 npm-debug.log*
